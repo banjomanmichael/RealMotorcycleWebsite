@@ -1,0 +1,108 @@
+
+body {
+    background-image: url("app/assets/images/HomePage.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: Verdana, Sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+h3 {
+    font-family: Verdana, Sans-serif;
+    color: white;
+    margin-left: 50px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+h4 {
+    font-family: Verdana, Sans-serif;
+    color: #222;
+    margin-left: 50px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+p {
+    font-family: Verdana, Sans-serif;
+    font-size: 15px;
+    color: white;
+    
+    width: 30em; 
+    word-wrap: break-word;
+    line-height: 150%;
+    
+    margin-left: 50px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; 
+}
+
+#nav {
+    
+    text-align: center; 
+    
+}
+
+li {
+    font-family: "Verdana", Times, serif;
+    display: inline-block;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-right: 1px solid royalblue;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #171717;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+div a {
+   border-top: 1.9px solid royalblue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgrey
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
