@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-  <title><%= yield(:title) %> | House of Thunder</title>
- 
   <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
 </head>
-
+    
 <style>
   body {
-      background-image: url('<%= asset_path 'HomePage.jpg' %>');
-      background-color: black;
-      background-repeat: no-repeat;
+      background-color: #0063b3;
       background-attachment: fixed;
   }
 </style>
-
+    
 <body>
     
 <ul>
-    <li><a href="views/static_pages/home.html.erb">Home</a> </li>
+    <li><a href="homepage.html">Home</a></li>
     
     <li class="dropdown">
     <a href="street.html" class="dropbtn">Street</a>
@@ -36,7 +31,7 @@
     <div class="dropdown-content">
       <a href="#">Motocross</a>
       <a href="#">Trail bike</a>
-      <a href="#">Dual-sport</a>
+      <a href="#">Dual-Sport</a>
     </div>
     </li>
     
@@ -61,22 +56,11 @@
     <i>HOUSE OF THUNDER</i>
 </h1>
 
-<h4>
-    <i>(A Motorcycle Shop)</i>
-</h4>
+<div style="background-color:white;color:black;padding-right:290px;">
+   <img src="app/assets/images/ninja1000blue.jpg" alt: Ninja 1000>
+   <img src="app/assets/images/ninja1000green.jpg">
 
-<h3>
-    Welcome, riders!
-</h3>
-
-<p>
-  Whether you've been riding for decades or you're just starting out, 
-our goal is to provide you with the perfect bike and riding gear. We have a variety of selections available every day.
-</p>
-
-<p>
-  Find the right bike, <i><b>sign up</b></i>, and request a test ride or place an order today!
-</p>
+</div> 
 
 </body>
 </html>
