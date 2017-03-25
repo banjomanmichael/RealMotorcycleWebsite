@@ -1,3 +1,5 @@
+<% provide(:title, "Home") %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,7 +33,10 @@
       <p>
         Find the right bike, <i><b>sign up</b></i>, and request a test ride or place an order today!
       </p>
-      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+      <%= link_to "Sign up to ride now!", '#', class: "btn btn-lg btn-primary" %>
     </div>
+    
+    <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
   </body>
 </html>

@@ -1,5 +1,6 @@
 
 body {
+    background-image: url("app/assets/images/HomePage.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,14 +46,15 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222;
     text-align: center; 
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 #nav {
-    
     text-align: center; 
-    
 }
 
 li {
@@ -63,14 +65,13 @@ li {
 li a, .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;    
+    text-align: center;
     padding: 12px 30px;
     text-decoration: none;
-    border-right: 1px solid royalblue;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #171717;
+    background-color: black;
 }
 
 li.dropdown {
@@ -78,7 +79,7 @@ li.dropdown {
 }
 
 div a {
-   border-top: 1.9px solid royalblue;
+   border-top: 2px solid #222;
 }
 
 .dropdown-content {

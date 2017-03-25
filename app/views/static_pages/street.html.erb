@@ -1,3 +1,5 @@
+<% provide(:title, "Street") %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,10 +20,13 @@
   </h1>
   
   <div style="background-color:white;color:black;padding-right:290px;">
-     <img src="app/assets/images/ninja1000blue.jpg" alt: Ninja 1000>
-     <img src="app/assets/images/ninja1000green.jpg">
-  
+    <%=image_tag("Street/Supersport/Kawasaki_Ninja1000_Blue.jpg")%>
+    <%=image_tag("Street/Supersport/Kawasaki_Ninja1000_Green.jpg")%>
+    <%=image_tag("Street/Supersport/Yamaha_R6_Black.jpg")%>
+    <%=image_tag("Street/Supersport/Yamaha_R6_Blue.jpg")%>
   </div> 
-  
+
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
   </body>
 </html>
