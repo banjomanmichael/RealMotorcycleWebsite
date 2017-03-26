@@ -106,3 +106,26 @@ div a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.btn {
+    background-color: #0073e6; 
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 29px;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Sans-serif;
+    font-weight: bold;
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+    background-color: #2eb82e; 
+    border: 2px solid #2eb82e;
+    color: white;
+}

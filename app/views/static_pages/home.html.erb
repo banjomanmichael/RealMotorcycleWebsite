@@ -9,6 +9,7 @@
   <style>
     body {
         background-image: url('<%= asset_path 'HomePage.jpg' %>');
+        background-size: 1400px 1200px;
         background-color: black;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -33,7 +34,7 @@
       <p>
         Find the right bike, <i><b>sign up</b></i>, and request a test ride or place an order today!
       </p>
-      <%= link_to "Sign up to ride now!", '#', class: "btn btn-lg btn-primary" %>
+      <i><%= link_to "Sign up to ride now!", '#', class: "btn btn-lg btn-primary" %></i>
     </div>
     
     <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
