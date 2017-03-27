@@ -1,0 +1,30 @@
+<% provide(:title, "Off-road") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <style>
+    body {
+        background-color: #0063b3;
+        background-attachment: fixed;
+    }
+  </style>
+    
+  <body>
+      
+  <h1>
+      <i>HOUSE OF THUNDER</i>
+  </h1>
+  
+  <div style="background-color:white;color:black;padding-right:290px;">
+    <%=image_tag("Off-road/Dirtbikes/KTM_250.jpg")%>
+    
+  </div> 
+ 
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>
