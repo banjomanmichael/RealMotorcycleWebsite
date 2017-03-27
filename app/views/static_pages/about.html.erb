@@ -1,2 +1,28 @@
-<h1>Welcome to the about page!</h1>
-<p>Info: We are a motorcycle shop.</p>
+<% provide(:title, "About") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+
+  <style>
+    body {
+        background-image: url('<%= asset_path 'HomePage.jpg' %>');
+        background-size: 1400px 1200px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+  </style>
+
+  <body>
+    <div class="home information">
+        <h1>Welcome to the about page!</h1>
+        <p>Info: We are a motorcycle shop.</p>
+    </div>
+    
+    <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>

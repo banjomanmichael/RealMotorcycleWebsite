@@ -10,6 +10,9 @@ class StaticPagesController < ApplicationController
   
   def ridinggear
   end
+  
+  def contact
+  end
 
   def about
   end

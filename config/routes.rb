@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   
   get "/home.html.erb" => "static_pages#home"
   get "/street.html.erb" => "static_pages#street"
+  get "/offroad.html.erb" => "static_pages#offroad"
+  get "/ridinggear.html.erb" => "static_pages#ridinggear"
+  get "/contact.html.erb" => "static_pages#contact"
+  get "/about.html.erb" => "static_pages#about"
   
   get 'static_pages/offroad'
   get 'static_pages/ridinggear'
