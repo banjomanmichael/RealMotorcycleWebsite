@@ -35,7 +35,7 @@
             </li>
             
             <li class="dropdown">
-            <a href="#" ridinggear.html.erb="dropbtn">Riding Gear</a>
+            <a href="ridinggear.html.erb" class="dropbtn">Riding Gear</a>
             <div class="dropdown-content">
               <a href="#">Helmets</a>
               <a href="#">Jackets</a>
@@ -46,7 +46,7 @@
             </div>
             </li>
             
-            <li><a href="contact.html.erb">Contact Us</a></li>
+            <li><a href="show.html.erb">Account</a></li>
             <li><a href="about.html.erb">About</a></li>
           </ul>
         </nav>
@@ -54,6 +54,7 @@
     </header>
     <div class="container">
       <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>

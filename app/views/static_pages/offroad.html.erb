@@ -11,6 +11,23 @@
         background-color: #0063b3;
         background-attachment: fixed;
     }
+    
+    p {
+        font-family: Verdana, Sans-serif;
+        font-size: 15px;
+        color: black;
+        
+        width: 30em; 
+        word-wrap: break-word;
+        line-height: 150%;
+        
+        /*margin-left: 50px;*/
+        text-shadow: 7px 7px 10px lightgrey;
+    }
+    
+    .floated_img {
+        float: left;
+    }
   </style>
     
   <body>
@@ -19,10 +36,23 @@
       <i>HOUSE OF THUNDER</i>
   </h1>
   
-  <div style="background-color:white;color:black;padding-right:290px;">
-    <%=image_tag("Off-road/Dirt bikes/KTM_250.jpg")%>
+    <div style="background-color:white;color:black;padding-right:500px;">
+        
+        <div class=".floated_img">
+            <%=image_tag("Off-road/Dirt bikes/KTM_250.jpg", :size => "692x400")%>
+            <p>This is a KTM250</p>
+        </div>
+        
+        <div class=".floated_img">
+            <%=image_tag("Off-road/Dirt bikes/Kawasaki_KX450f.jpg", :size => "692x582")%>
+            <p>This is a Kawasaki KX450f</p>
+        </div>
     
-  </div> 
+        <div class=".floated_img">
+            <%=image_tag("Off-road/Dirt bikes/Yamaha_YZ250f.jpg", :size => "692x518")%>
+            <p>This is a Yamaha YZ250f</p>
+        </div>
+    </div> 
  
   <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
     

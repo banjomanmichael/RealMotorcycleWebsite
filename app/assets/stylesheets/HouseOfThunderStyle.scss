@@ -1,10 +1,12 @@
 
 body {
     background-image: url("app/assets/images/HomePage.jpg");
-    background-color: black;
+    background-color: grey;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 
 h1 {
     font-family: Verdana, Sans-serif;
@@ -128,4 +130,82 @@ div a {
     background-color: #2eb82e; 
     border: 2px solid #2eb82e;
     color: white;
+}
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+/* forms */
+
+label {
+    font-family: Verdana, Sans-serif;
+    color: white;
+    margin-left: 60px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 15px;
+    @include box_sizing;
+    margin-left: 50px;
+}
+
+input {
+  height: auto !important;
+}
+
+.center {
+  text-align: center;
 }
