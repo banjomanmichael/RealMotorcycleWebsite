@@ -1,12 +1,10 @@
 
 body {
     background-image: url("app/assets/images/HomePage.jpg");
-    background-color: grey;
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-
 
 h1 {
     font-family: Verdana, Sans-serif;
@@ -41,6 +39,24 @@ p {
     
     margin-left: 50px;
     text-shadow: 7px 7px 10px navy;
+}
+
+.bikes {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 300px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 300px; /* Firefox */
+    column-gap: 300px;
+    h4 {
+        font-family: Verdana, Sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-right: -200px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        text-shadow: 7px 7px 10px black;
+    }
 }
 
 ul {
@@ -107,6 +123,29 @@ div a {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+button {
+    background-color: #008dfa; 
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 29px;
+    margin-top: 100px;
+    margin-left: 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Sans-serif;
+    font-weight: bold;
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: #2eb82e; 
+    border: 2px solid #2eb82e;
+    color: white;
 }
 
 .btn {
@@ -208,4 +247,65 @@ input {
 
 .center {
   text-align: center;
+}
+
+.alert-success {
+    font-family: Verdana, Sans-serif;
+    color: white;
+    margin-left: 50px;
+    text-shadow: 7px 7px 10px navy;
+}
+
+// Image darkening properties:
+
+.vividworknav {
+
+    height: auto;
+    float: left;
+    padding: 0;
+    position: relative;
+    background-color: black;
+}
+
+.vividworknav:hover img {
+    opacity: 0.3;
+}
+
+.vividworknav:hover .work-text-content {
+    opacity: 1; 
+}
+
+.vividworknav img {
+    padding: 0;
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+
+.vividworknav img,
+.work-text-content {
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+.work-text-content {
+    h3 {
+        font-family: Verdana, Sans-serif;
+        color: white;
+        text-shadow: none;
+    }
+    position: absolute;
+    left: -9%;
+    top: 36%;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+}
+
+.image_tag {
+    float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;
 }

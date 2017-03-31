@@ -7,25 +7,49 @@
   </head>
     
   <style>
-    body {
-        background-color: #0063b3;
-        background-attachment: fixed;
+    h1 {
+      text-align: center;
     }
   </style>
     
   <body>
-      
-  <h1>
-      <i>HOUSE OF THUNDER</i>
-  </h1>
   
-  <div style="background-color:white;color:black;padding-right:290px;">
-    <%=image_tag("Street/Supersport/Kawasaki_Ninja1000_Blue.jpg")%>
-    <%=image_tag("Street/Supersport/Kawasaki_Ninja1000_Green.jpg")%>
-    <%=image_tag("Street/Supersport/Yamaha_R6_Black.jpg")%>
-    <%=image_tag("Street/Supersport/Yamaha_R6_Blue.jpg")%>
-  </div> 
-
+  <div style="background-color:black;color:black;padding-left:300px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding-right: 180px; padding-top: 15px">
+      <i>Street Motorcycles</i>
+    </h1>
+   
+    <div class="vividworknav">
+          <%=image_tag("Street/Sport/Kawasaki_Ninja300_Green.jpg", :size => "600x450", :class => "image_tag")%>   
+        <div class="work-text-content">
+          <h3>S P O R T</h3>
+        </div>
+      </div>
+      
+      <div class="vividworknav">
+          <%=image_tag("Street/Sport touring/BMW_S1000_XR_White.jpg", :size => "600x450", :class => "image_tag")%>   
+        <div class="work-text-content">
+          <h3>S P O R T - T O U R I N G</h3>
+        </div>
+      </div>
+      
+      <div class="vividworknav">
+          <%=image_tag("Street/Supersport/Kawasaki_Ninja636_Black.jpg", :size => "600x400", :class => "image_tag")%>   
+        <div class="work-text-content">
+          <h3>S U P E R S P O R T</h3>
+        </div>
+      </div>
+    
+      <div class="vividworknav">
+          <%=image_tag("Street/Cruisers/HarleyDavidson_Iron883.jpg", :size => "600x400", :class => "image_tag")%> 
+        <div class="work-text-content">
+          <h3>C R U I S E R</h3>
+        </div>
+        <p style="clear: both;">
+          <br style="clear:both;"/>
+      </div>
+  </div>
+    
   <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
     
   </body>

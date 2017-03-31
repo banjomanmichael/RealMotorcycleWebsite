@@ -1,0 +1,54 @@
+<% provide(:title, "Supersport") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding: 15px;">
+      <i>Supersport</i>
+    </h1>
+   
+    <div id="content">
+      <div class="bikes">
+        <%=image_tag("Street/Supersport/Kawasaki_Ninja636_Black.jpg", :size => "600x400")%>          
+        <h4>Model: Kawasaki Ninja ZX-6R | Year: 2016</h4>
+
+        <%=image_tag("Street/Supersport/Honda_CBR600RR_Red.jpg", :size => "600x353")%>          
+        <h4>Model: Honda CBR600RR | Year: 2016</h4>
+        
+        <%=image_tag("Street/Supersport/2016-Kawasaki-Ninja-ZX-10R.jpg", :size => "600x450")%>
+        <h4>Model: Kawasaski ZX-10R | Year: 2016</h4>
+        
+        <a href="mailto:banjomanmichael@gmail.com">
+          <button type="button" onclick="alert('Send a request email now!')">Request a test ride</button>
+        </a>
+        
+        <%=image_tag("Street/Supersport/Suzuki_Blue.jpg", :size => "600x375")%>
+        <h4>Model: Suzuki GSX-R600 | Year: 2014</h4>
+  
+        <%=image_tag("Street/Supersport/Suzuki_GSX-R600_Yellow.jpg", :size => "600x375")%>
+        <h4>Model: Suzuki GSX-R600 | Year: 2014</h4>
+          
+        <%=image_tag("Street/Supersport/Kawasaki_Ninja636_Green.jpg", :size => "600x364")%>
+        <h4>Model: Kawasaki ZX-6 | Year: 2016</h4>
+        
+        <%=image_tag("Street/Supersport/Yamaha_R6_blue2.jpg", :size => "600x388")%>
+        <h4>Model: Yamaha R6 | Year: 2016</h4>
+        
+      </div>
+      
+    </div>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>
