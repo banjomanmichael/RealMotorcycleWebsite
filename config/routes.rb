@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get "/about.html.erb" => "static_pages#about"
   get '/signup' => 'users#new'
   post '/signup',  to: 'users#create'
-  
+
   get 'static_pages/sport'
   get 'static_pages/sporttouring'
   get 'static_pages/supersport'
@@ -35,14 +35,12 @@ Rails.application.routes.draw do
   get "/dualsport.html.erb" => "static_pages#dualsport"
   
   get 'static_pages/helmets'
-  get 'static_pages/jackets'
   get 'static_pages/jerseysets'
   get 'static_pages/goggles'
   get 'static_pages/gloves'
   get 'static_pages/boots'
   
   get "/helmets.html.erb" => "static_pages#helmets"
-  get "/jackets.html.erb" => "static_pages#jackets"
   get "/jerseysets.html.erb" => "static_pages#jerseysets"
   get "/goggles.html.erb" => "static_pages#goggles"
   get "/gloves.html.erb" => "static_pages#gloves"

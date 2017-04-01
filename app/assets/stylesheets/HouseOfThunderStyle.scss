@@ -309,3 +309,20 @@ input {
 .image_tag {
     float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;
 }
+
+#error_explanation {
+    
+    
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  
+  .form-control {
+      color: red;
+  }
+}

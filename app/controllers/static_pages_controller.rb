@@ -35,9 +35,6 @@ class StaticPagesController < ApplicationController
   def helmets
   end
   
-  def jackets
-  end
-  
   def goggles
   end
   
