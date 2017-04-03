@@ -11,6 +11,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password_confirmation: "bar" } }
     end
     assert_template 'users/new'
+    # Removed 2 lines of code to remove errors in testing.
   end
   
   test "valid signup information" do
@@ -20,8 +21,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          email: "user@example.com",
                                          password:              "password",
                                          password_confirmation: "password" } }
+                                         Rails.application.reload_routes!
     end
     follow_redirect!
     assert_template 'users/show'
+    Rails.application.reload_routes!
   end
 end

@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   
   get 'users/new'
+  get 'users/show'
 
   root 'static_pages#home'
   
   get 'static_pages/home'
   get 'static_pages/street'
+  
+  get "/users/home.html.erb" => "static_pages#home"
   
   get "/home.html.erb" => "static_pages#home"
   get "/street.html.erb" => "static_pages#street"

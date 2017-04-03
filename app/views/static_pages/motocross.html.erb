@@ -1,0 +1,56 @@
+<% provide(:title, "Motocross") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding: 15px;">
+      <i>Motocross</i>
+    </h1>
+   
+    <div id="content">
+      <div class="bikes">
+        <%=image_tag("Off-road/Motocross/Yamaha_YZ450f.jpg", :size => "600x388")%>          
+        <h4>Model: Yamaha YZ-450f | Year: 2016</h4>
+
+        <%=image_tag("Off-road/Motocross/Suzuki-RMZ450.jpg", :size => "600x535")%>          
+        <h4>Model: Suzuki RMZ-450 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Motocross/Kawasaki_KX250f.jpg", :size => "600x450")%>
+        <h4>Model: Kawasaski KX-250f | Year: 2016</h4>
+        
+        <a href="mailto:banjomanmichael@gmail.com">
+          <button type="button" onclick="alert('Send a request email now!')">Request a test ride</button>
+        </a>
+        
+        <%=image_tag("Off-road/Motocross/Kawasaki_KX450f.jpg", :size => "600x450")%>
+        <h4>Model: Kawasaki KX-450f | Year: 2017</h4>
+ 
+        <%=image_tag("Off-road/Motocross/Honda_CRF250R.jpg", :size => "600x361")%>
+        <h4>Model: Honda CRF-250R | Year: 2017</h4>
+          
+        <%=image_tag("Off-road/Motocross/KTM_250.jpg", :size => "600x347")%>
+        <h4>Model: Kawasaki ZX-6 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Motocross/Yamaha_YZ250f.jpg", :size => "600x450")%>
+        <h4>Model: Yamaha YZ-250f | Year: 2015</h4>
+        
+       
+        
+      </div>
+      
+    </div>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>
