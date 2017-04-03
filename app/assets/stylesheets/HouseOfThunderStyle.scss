@@ -148,6 +148,28 @@ button:hover {
     color: white;
 }
 
+.loginbutton {
+    background-color: #008dfa; 
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Sans-serif;
+    font-weight: bold;
+}
+
+.loginbutton:hover {
+    background-color: #2eb82e; 
+    border: 2px solid #2eb82e;
+    color: white;
+}
+
 .btn {
     background-color: #008dfa; 
     border: 2px solid #007acc;
@@ -325,4 +347,9 @@ input {
   .form-control {
       color: red;
   }
+}
+
+iframe {
+    margin-left: 50px;
+    margin-top: 10px;
 }

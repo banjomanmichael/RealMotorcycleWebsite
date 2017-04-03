@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'sessions/new'
+
   get 'users/new'
   get 'users/show'
 
@@ -18,6 +20,10 @@ Rails.application.routes.draw do
   get "/about.html.erb" => "static_pages#about"
   get '/signup' => 'users#new'
   post '/signup',  to: 'users#create'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
+
 
   get 'static_pages/sport'
   get 'static_pages/sporttouring'

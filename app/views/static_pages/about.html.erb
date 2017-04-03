@@ -5,7 +5,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
   </head>
-
+  
   <style>
     body {
         background-image: url('<%= asset_path 'AboutPage.jpg' %>');
@@ -18,10 +18,14 @@
 
   <body>
     <div class="home information">
-        <h1>Welcome to the about page!</h1>
-        <p>Info: We are a motorcycle shop.</p>
+        <h1>Contact Info</h1>
+        <p>Located right off of I-385, north of Pleasantburg drive on Wade Hampton Blvd.</p>
+        <p>Call (864) 321-0987</p>
     </div>
     
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.927112648792!2d-82.35781042841302!3d34.883176550600254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88582e70d383bb85%3A0xa741155cce0521ed!2sPowersports+of+Greenville!5e0!3m2!1sen!2sus!4v1491193773907" 
+        width="400" height="280" frameborder="10" style="border:10" allowfullscreen></iframe>
+
     <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
     
   </body>
