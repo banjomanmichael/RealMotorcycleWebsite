@@ -9,6 +9,16 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    
+    p {
+      margin-top: -55px;
+      margin-left: 120px;
+    }
+    
+    .p1 {
+      margin-top: -55px;
+      margin-left: 120px;
+    }
 </style>
 
 <div class="row">
@@ -21,9 +31,14 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
 
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <p>Remember me</p>
+      <% end %>
+
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p1>New user? <%= link_to "Sign up now!", signup_path %></p1>
   </div>
 </div>
