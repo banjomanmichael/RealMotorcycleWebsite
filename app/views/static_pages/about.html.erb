@@ -1,4 +1,4 @@
-<% provide(:title, "About") %>
+<% provide(:title, "Contact") %>
 
 <!DOCTYPE html>
 <html>
@@ -8,19 +8,40 @@
   
   <style>
     body {
-        background-image: url('<%= asset_path 'AboutPage.jpg' %>');
-        background-size: 1300px 813px;
+        background-image: url('<%= asset_path 'ContactPage.jpg' %>');
+        background-size: 1400px 873px;
         background-color: black;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+    
+    h1 {
+        font-family: Verdana, Sans-serif;
+        color: #0074cc;
+        text-align: left;
+        margin-left: 50px;
+        text-shadow: 7px 7px 10px grey;
+    }
+
+    h3 {
+        font-family: Verdana, Sans-serif;
+        font-size: 15px;
+        color: #0082e6;
+        
+        width: 30em; 
+        word-wrap: break-word;
+        line-height: 150%;
+        
+        margin-left: 50px;
+        text-shadow: 7px 7px 10px grey;
     }
   </style>
 
   <body>
     <div class="home information">
         <h1>Contact Info</h1>
-        <p>Located right off of I-385, north of Pleasantburg drive on Wade Hampton Blvd.</p>
-        <p>Call (864) 321-0987</p>
+        <h3>Located right off of I-385, north of Pleasantburg drive on Wade Hampton Blvd.</h3>
+        <h3>Call (864) 321-0987</h3>
     </div>
     
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.927112648792!2d-82.35781042841302!3d34.883176550600254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88582e70d383bb85%3A0xa741155cce0521ed!2sPowersports+of+Greenville!5e0!3m2!1sen!2sus!4v1491193773907" 

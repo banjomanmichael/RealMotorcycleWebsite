@@ -18,37 +18,48 @@
             <li class="dropdown">
             <a href="street.html.erb" class="dropbtn">Street</a>
             <div class="dropdown-content">
-              <a href="sport.html.erb">Sport</a>
-              <a href="sporttouring.html.erb">Sport touring</a>
-              <a href="supersport.html.erb">Supersport</a>
-              <a href="cruiser.html.erb">Cruiser</a>
+              <a href="sport.html.erb" class="dropdownseparator">Sport</a>
+              <a href="sporttouring.html.erb" class="dropdownseparator">Sport touring</a>
+              <a href="supersport.html.erb" class="dropdownseparator">Supersport</a>
+              <a href="cruiser.html.erb" class="dropdownseparator">Cruiser</a>
             </div>
             </li>
             
             <li class="dropdown">
             <a href="offroad.html.erb" class="dropbtn">Off-road</a>
             <div class="dropdown-content">
-              <a href="motocross.html.erb">Motocross</a>
-              <a href="trailbike.html.erb">Trail bike</a>
-              <a href="dualsport.html.erb">Dual-sport</a>
+              <a href="motocross.html.erb" class="dropdownseparator">Motocross</a>
+              <a href="trailbike.html.erb" class="dropdownseparator">Trail bike</a>
+              <a href="dualsport.html.erb" class="dropdownseparator">Dual-sport</a>
             </div>
             </li>
             
             <li class="dropdown">
             <a href="ridinggear.html.erb" class="dropbtn">Riding Gear</a>
             <div class="dropdown-content">
-              <a href="helmets.html.erb">Helmets</a>
-              <a href="jerseysets.html.erb">Jersey sets</a>
-              <a href="goggles.html.erb">Goggles</a>
-              <a href="gloves.html.erb">Gloves</a>
-              <a href="boots.html.erb">Boots</a>
+              <a href="helmets.html.erb" class="dropdownseparator">Helmets</a>
+              <a href="jerseysets.html.erb" class="dropdownseparator">Jersey sets</a>
+              <a href="goggles.html.erb" class="dropdownseparator">Goggles</a>
+              <a href="gloves.html.erb" class="dropdownseparator">Gloves</a>
+              <a href="boots.html.erb" class="dropdownseparator">Boots</a>
             </div>
             </li>
             
             <li><a href="about.html.erb">Contact us</a></li>
-            <li><a href="new.html.erb">Account</a></li>
 
-            <li><i><%= link_to "Log in", login_path, class: "loginbutton" %></i></li>
+            <% if logged_in? %>
+              <li class="dropdown">
+              <a href="new.html.erb" class="dropbtn">My Account</a>
+              <div class="dropdown-content">
+                <a <%= link_to "Profile", current_user, class: "dropdownseparator" %></a>
+                <a <%= link_to "Settings", '#', class: "dropdownseparator" %></a>
+                <a <%= link_to "Log out", logout_path, method: "delete", class: "dropdownseparator" %></a>
+              </div>
+              </li>
+            <% else %>
+              <li><i><%= link_to "Log in", login_path, class: "loginbutton" %></i></li>
+            <% end %>
+            
           </ul>
         </nav>
       </div>
@@ -58,7 +69,7 @@
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
       <%= yield %>
-      <%= debug(params) if Rails.env.development? %>
+      <!--<%= debug(params) if Rails.env.development? %>-->
     </div>
   </body>
 </html>
