@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <%= csrf_meta_tags %>
@@ -13,43 +13,43 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="home.html.erb">Home</a></li>
+            <li><a <%= link_to "Home", root_path %></a></li>
             
             <li class="dropdown">
-            <a href="street.html.erb" class="dropbtn">Street</a>
+            <a <%= link_to "Street", street_path, class: "dropbtn" %></a>
             <div class="dropdown-content">
-              <a href="sport.html.erb" class="dropdownseparator">Sport</a>
-              <a href="sporttouring.html.erb" class="dropdownseparator">Sport touring</a>
-              <a href="supersport.html.erb" class="dropdownseparator">Supersport</a>
-              <a href="cruiser.html.erb" class="dropdownseparator">Cruiser</a>
+              <a <%= link_to "Sport", sport_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Sporttouring", sporttouring_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Supersport", supersport_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Cruiser", cruiser_path, class: "dropdownseparator" %></a>
             </div>
             </li>
             
             <li class="dropdown">
-            <a href="offroad.html.erb" class="dropbtn">Off-road</a>
+            <a <%= link_to "Off-road", offroad_path, class: "dropbtn" %></a>
             <div class="dropdown-content">
-              <a href="motocross.html.erb" class="dropdownseparator">Motocross</a>
-              <a href="trailbike.html.erb" class="dropdownseparator">Trail bike</a>
-              <a href="dualsport.html.erb" class="dropdownseparator">Dual-sport</a>
+              <a <%= link_to "Motocross", motocross_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Trailbike", trailbike_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Dualsport", dualsport_path, class: "dropdownseparator" %></a>
             </div>
             </li>
             
             <li class="dropdown">
-            <a href="ridinggear.html.erb" class="dropbtn">Riding Gear</a>
+            <a <%= link_to "Riding Gear", ridinggear_path, class: "dropbtn" %></a>
             <div class="dropdown-content">
-              <a href="helmets.html.erb" class="dropdownseparator">Helmets</a>
-              <a href="jerseysets.html.erb" class="dropdownseparator">Jersey sets</a>
-              <a href="goggles.html.erb" class="dropdownseparator">Goggles</a>
-              <a href="gloves.html.erb" class="dropdownseparator">Gloves</a>
-              <a href="boots.html.erb" class="dropdownseparator">Boots</a>
+              <a <%= link_to "Helmets", helmets_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Jersey sets", jerseysets_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Goggles", goggles_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Gloves", gloves_path, class: "dropdownseparator" %></a>
+              <a <%= link_to "Boots", boots_path, class: "dropdownseparator" %></a>
             </div>
             </li>
             
-            <li><a href="about.html.erb">Contact us</a></li>
+            <li><a <%= link_to "Contact Us", contact_path %></a></li>
 
             <% if logged_in? %>
               <li class="dropdown">
-              <a href="new.html.erb" class="dropbtn">My Account</a>
+              <a href="#" class="dropbtn">My Account</a>
               <div class="dropdown-content">
                 <a <%= link_to "Profile", current_user, class: "dropdownseparator" %></a>
                 <a <%= link_to "Settings", edit_user_path(current_user), class: "dropdownseparator" %></a>
