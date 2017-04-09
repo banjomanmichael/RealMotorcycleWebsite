@@ -12,12 +12,17 @@
     
     p {
       margin-top: -55px;
-      margin-left: 120px;
+      margin-bottom: 70px;
+      margin-left: 100px;
     }
     
-    .p1 {
-      margin-top: -55px;
-      margin-left: 120px;
+    a {
+      color: blue;
+    }
+    
+    .checkbox {
+      margin-bottom: 1000px;
+      margin-left: 40px;
     }
 </style>
 
@@ -31,14 +36,14 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <p>Remember me</p>
-      <% end %>
-
       <%= f.submit "Log in", class: "btn btn-primary" %>
+      
+      <%= f.label :remember_me, class: "checkbox" do %>
+          <%= f.check_box :remember_me %>
+          <p>Remember me</p>
+      <% end %>
     <% end %>
-
-    <p1>New user? <%= link_to "Sign up now!", signup_path %></p1>
+    <p>New user? <%= link_to "Sign up now!", signup_path%></p>
+    
   </div>
 </div>
