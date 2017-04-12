@@ -61,5 +61,5 @@ Rails.application.routes.draw do
   get 'static_pages/boots'
 
   resources :users
-  
+  resources :microposts, only: [:create, :destroy]
 end
