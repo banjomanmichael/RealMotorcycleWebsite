@@ -1,0 +1,85 @@
+<% provide(:title, "Goggles") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <style>
+    h5 {
+      font-family: Verdana, Sans-serif;
+      color: black;
+      text-align: left;
+      margin-left: 50px;
+      text-shadow: none;
+      font-size: 18px;
+    }
+    
+    button {
+      padding: 12px 29px;
+      margin-top: 10px;
+      margin-left: 130px;
+      box-shadow: none;
+    }
+  </style>
+    
+  <body>
+
+  <div style="background-color:white;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     
+    <h1 style= "text-shadow: none; padding: 15px; color: black;">
+      <i>Goggles Selection</i>
+    </h1>
+    
+    <h5 id="total"> Total: </h5> 
+   
+    <script>
+      var price;
+    </script>
+   
+    <div id="content">
+      <div class="bikes">
+         <table style="width:270%", "margin-left: 100px; padding-top: -100;">
+          <tr>
+            <td><%=image_tag("Riding Gear/Goggles/Goggles_Fox_Black.jpg", :size => "400x207")%></td>
+            <td><h5>Fox, Black</h5><h5> Price: $49.99</h5></td>
+            <td><a><button type="button" onclick="displayTotal()">Add to cart</button></a></td>
+          </tr>
+          <tr>
+            <td><%=image_tag("Riding Gear/Goggles/Goggles_Fox_Blueandwhite.jpg", :size => "400x207")%></td>
+            <td><h5>Fox, Blue and white</h5><h5> Price: $49.99</h5></td>
+            <td><a><button type="button" onclick="displayTotal()">Add to cart</button></a></td>
+          </tr>
+          <tr>
+            <td><%=image_tag("Riding Gear/Goggles/Goggles_Fox_Redandblue.jpg", :size => "400x207")%></td>
+            <td><h5>Fox, Red and Blue</h5><h5> Price: $49.99</h5></td>
+            <td><a><button type="button" onclick="displayTotal()">Add to cart</button></a></td>
+          </tr>
+          <tr>
+            <td><%=image_tag("Riding Gear/Goggles/Goggles_Scott_Blue.jpg", :size => "400x400")%> </td>
+            <td><h5>Scott, Blue</h5><h5> Price: $49.99</h5></td>
+            <td><a><button type="button" onclick="displayTotal()">Add to cart</button></a></td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+    
+    <script>
+      var totalAmount = 49.99;
+      
+      function displayTotal() { 
+          
+          document.getElementById("total").innerHTML = "Total: $" + totalAmount;
+          totalAmount += 49.99;
+      }
+    </script>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>
