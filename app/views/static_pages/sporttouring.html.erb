@@ -1,0 +1,41 @@
+<% provide(:title, "Sport Touring") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding: 15px;">
+      <i>Sport Touring</i>
+    </h1>
+   
+    <div id="content">
+      <div class="bikes">
+        <%=image_tag("Street/Sport touring/Kawasaki_Versys_Green.png", :size => "600x445")%>          
+        <h4>Model: Kawasaki Versys | Year: 2016</h4>
+        
+        <a href="mailto:banjomanmichael@gmail.com">
+          <button type="button" onclick="alert('Send a request email now!')">Request a test ride</button>
+        </a>
+        
+        <%=image_tag("Street/Sport touring/BMW_S1000_XR_White.jpg", :size => "600x450")%>
+        <h4>Model: BMW S1000-XR | Year: 2016</h4>
+
+        <%=image_tag("Street/Sport touring/Stelvio_NTX_Red.jpg", :size => "600x494")%>          
+        <h4>Model: Stelvio NTX | Year: 2016</h4>
+        
+      </div>
+    </div>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>

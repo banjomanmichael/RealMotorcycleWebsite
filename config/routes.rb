@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get  '/signup',      to: 'users#new'
   post '/signup',      to: 'users#create'
   
+  get '/show',        to: 'users#show'
+  
   get 'users/new'
   get 'users/show'
   
@@ -61,5 +63,7 @@ Rails.application.routes.draw do
   get 'static_pages/boots'
 
   resources :users
-  resources :microposts, only: [:create, :destroy]
+  resources :account_activations, only: [:edit]
+  resources :password_resets,     only: [:new, :create, :edit, :update]
+  resources :microposts,          only: [:create, :destroy]
 end

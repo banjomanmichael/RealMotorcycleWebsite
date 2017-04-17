@@ -1,0 +1,42 @@
+<% provide(:title, "Dualsport") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding: 15px;">
+      <i>Dualsport</i>
+    </h1>
+   
+    <div id="content">
+      <div class="bikes">
+        <%=image_tag("Off-road/Dual-sport/BMW_F800.jpg", :size => "600x404")%>          
+        <h4>Model: BMW F800 | Year: 2016</h4>
+
+        <%=image_tag("Off-road/Dual-sport/Kawasaki_KLR650.jpg", :size => "600x450")%>          
+        <h4>Model: Kawasaki KLR650 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Dual-sport/KTM_950_SuperEnduro.jpg", :size => "600x605")%>
+        <h4>Model: KTM 950 SuperEnduro | Year: 2016</h4>
+        
+        <a href="mailto:banjomanmichael@gmail.com">
+          <button type="button" onclick="alert('Send a request email now!')">Request a test ride</button>
+        </a>
+        
+      </div>
+      
+    </div>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>

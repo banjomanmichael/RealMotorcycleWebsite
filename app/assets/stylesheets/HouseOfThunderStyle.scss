@@ -75,6 +75,11 @@ ul {
     text-align: center; 
 }
 
+table {
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
 li {
     font-family: "Verdana", Times, serif;
     display: inline-block;
@@ -409,8 +414,10 @@ aside {
   list-style: none;
   padding: 0;
   li {
-    padding: 10px 0;
+    padding: 10px;
+    padding-left: 10px;
     border-top: 1px solid #e8e8e8;
+    background-color: white;
   }
   .user {
     margin-top: 5em;
@@ -439,11 +446,13 @@ aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
+
   }
 }
 
 span.picture {
-  margin-top: 10px;
+  margin-top: 100px;
+  margin-left: 100px;
   input {
     border: 0;
   }
@@ -458,52 +467,5 @@ span.picture {
     padding: 10px 0;
     border-bottom: 1px solid gray;
     display: inline-block;
-  }
-}
-
-/* microposts */
-
-.microposts {
-  list-style: none;
-  padding: 0;
-  li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
-  }
-  .user {
-    margin-top: 5em;
-    padding-top: 0;
-  }
-  .content {
-    display: block;
-    margin-left: 60px;
-    img {
-      display: block;
-      padding: 5px 0;
-    }
-  }
-  .timestamp {
-    color: pink;
-    display: block;
-    margin-left: 60px;
-  }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
-}
-
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
-
-span.picture {
-  margin-top: 10px;
-  input {
-    border: 0;
   }
 }

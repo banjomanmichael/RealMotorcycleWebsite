@@ -1,0 +1,63 @@
+<% provide(:title, "Street") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-left:300px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding-right: 180px; padding-top: 15px">
+      <i>Riding Gear</i>
+    </h1>
+   
+      <div class="vividworknav">
+          <%=link_to image_tag("Riding Gear/Helmets/Helmets_Shoei_Blueandblack.jpg", :size => "600x521", :class => "image_tag"), helmets_path %>   
+        <div class="work-text-content">
+          <h3>H E L M E T S</h3>
+        </div>
+      </div>
+      
+      <div class="vividworknav">
+          <%=link_to image_tag("Riding Gear/Goggles/Goggles_Fox_Blueandwhite.jpg", :size => "600x306", :class => "image_tag"), goggles_path %>   
+        <div class="work-text-content">
+          <h3>G O G G L E S</h3>
+        </div>
+      </div>
+      
+      <div class="vividworknav">
+          <%=link_to image_tag("Riding Gear/Jerseysets/Jerseyset_Fox_Blackandwhite.jpg", :size => "440x440", :class => "image_tag"), jerseysets_path %>   
+        <div class="work-text-content">
+          <h3>J E R S E Y S E T S</h3>
+        </div>
+      </div>
+    
+      <div class="vividworknav">
+          <%=link_to image_tag("Riding Gear/Gloves/Gloves_Fox_White.jpg", :size => "440x440", :class => "image_tag"), gloves_path %>   
+        <div class="work-text-content">
+          <h3>G L O V E S</h3>
+        </div>
+      </div>
+      
+      <div class="vividworknav">
+          <%=link_to image_tag("Riding Gear/Boots/Boots_Fox_White.jpg", :size => "440x440", :class => "image_tag"), boots_path %> 
+        <div class="work-text-content">
+          <h3>B O O T S</h3>
+        </div>
+        <p style="clear: both;">
+          <br style="clear:both;"/>
+      </div>
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>

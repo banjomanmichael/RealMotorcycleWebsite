@@ -1,0 +1,41 @@
+<% provide(:title, "Trail bike") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+  </head>
+    
+  <body>
+  
+  <div style="background-color:black;color:black;padding-top:0px;padding-right:236.5px; margin: -8px; margin-top: -22px;">
+     <h1 style= "text-shadow: none; padding: 15px;">
+      <i>Trail bike</i>
+    </h1>
+   
+    <div id="content">
+      <div class="bikes">
+        <%=image_tag("Off-road/Trail bikes/Kawasaki_KLX250_Black.jpg", :size => "600x400")%>          
+        <h4>Model: Kawasaski KLX-250 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Trail bikes/Kawasaki_KLX250.jpg", :size => "600x450")%>
+        <h4>Model: Kawasaski KLX-250 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Trail bikes/Kawasaki_KLX140.jpg")%>          
+        <h4>Model: Kawasaski KLX140 | Year: 2016</h4>
+        
+        <%=image_tag("Off-road/Trail bikes/Yamaha_TTR230.jpg", :size => "600x399")%>
+        <h4>Model: Yamaha TTR-230 | Year: 2017</h4>
+ 
+      </div>
+      
+    </div>
+    
+    <br style="clear:both;"/>
+    
+  </div>
+    
+  <title><%= yield(:title) %> | HOUSE OF THUNDER/title>
+    
+  </body>
+</html>
